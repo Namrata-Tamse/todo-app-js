@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App JS</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+	</head>
+	<body>
+	 <div><!--containing all-->
+
+			<header><!--containing the task list and button add item-->
+		    <div><h1>Tasks</h1><span> List</span></div>
+			<nav><button onclick="start()">+</button><span>Add Item</span></nav>
+			</header>
+
+			<nav class="noneNav"><!--this is being hidden when the starting page comes and gets activated when clicked on the particular trip name-->
+			<div><h1 class="noneNavH">Back</h1></div>
+			<div class="text"></div>
+            <nav><button id="addItem">+</button></nav>
+			</nav><!--kept hidden on main html page and called using the function-->
+
+
+			<section><!--seen in th first page-->
+			<div id="none">No Items in the todo list</div>
+			</section>
+
+    </div><!--ending of containing all-->
+
+    <div class="addNewList"><!--this will get activated when clicked on "add item" in the first step and also"there is page having "back" & particular card holder "name" and the "+"buttom-->
+			<div><label for="addNewList">Add New List</label></div>
+			<div><input type="text" name="addNewList" id="addNewListText"placeholder="Add New List"/></div>
+			<div><div class="addButton" onclick="addingTasks()">Add</div><div class="closeButton">Close</div></div>
+	</div>
+
+
+	<div class="addNewItem"><!--thiswill be getting activated when the particular card having the + button is clickedinside the card--->
+			<div><label for="addNewItem">Add New Item</label></div>
+            <div><input type="text" name="addNewItem"id="addNewItemText"placeholder="Add New Item"/></div>
+			<div><div class="addItemButton">Add</div><div class="closeButton2">Close</div></div>
+	</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
